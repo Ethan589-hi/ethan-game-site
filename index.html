@@ -1,3 +1,10 @@
+<div id="login-screen" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: white; z-index: 99999; display: flex; justify-content: center; align-items: flex-start;">
+    <img src="login-bg.png" alt="Login" style="width: 100%; max-width: 1200px; margin-top: 50px;">
+    
+    <div onclick="unlockSite()" style="position: absolute; top: 30%; left: 20%; width: 25%; height: 8%; cursor: pointer;"></div>
+</div>
+
+<div id="original-game-site">
 <!DOCTYPE html>
 <html>
  <link id="dynamic-favicon" rel="icon" href="resources/download.png">
@@ -1032,3 +1039,10 @@ favToggle.onchange = () => {
      
     </body>
 </html>
+</div> 
+<script>
+    function unlockSite() {
+        // Hides the fake login picture
+        document.getElementById('login-screen').style.display = 'none';
+    }
+</script>
