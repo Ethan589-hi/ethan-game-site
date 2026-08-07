@@ -1,25 +1,44 @@
-<div id="login-screen" onclick="unlockSite()" style="
-    position: fixed; 
-    top: 0; 
-    left: 0; 
-    width: 100vw; 
-    height: 100vh; 
-    background-color: #ffffff; 
-    z-index: 999999; 
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    cursor: pointer;
-    overflow: hidden;">
-    
-    <img src="login-bg.png" alt="Login Portal" style="
-        width: 100%; 
-        height: 100%; 
-        object-fit: contain; 
-        max-width: 1200px;">
-</div>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Brightspace</title>
+    <link id="dynamic-favicon" rel="icon" href="favicon-32x32.png">
+    <link rel="manifest" href="manifest.json">
+    <meta name="application-name" content="Document1 - Word">
+</head>
+<body style="margin: 0; padding: 0;">
 
-<div id="original-game-site">
+    <div id="login-screen" style="
+        position: fixed; 
+        top: 0; 
+        left: 0; 
+        width: 100vw; 
+        height: 100vh; 
+        background-color: #ffffff; 
+        z-index: 999999; 
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        overflow: hidden;">
+        
+        <div style="position: relative; width: 100%; max-width: 1200px; display: flex; justify-content: center;">
+            
+            <img src="login-bg.png" alt="Login Portal" style="width: 100%; height: auto; display: block;">
+            
+            <div onclick="unlockSite()" style="
+                position: absolute; 
+                top: 26%; 
+                left: 13%; 
+                width: 17%; 
+                height: 7%; 
+                cursor: pointer; 
+                background: transparent;">
+            </div>
+
+        </div>
+    </div>
+
+    <div id="original-game-site">
 <!DOCTYPE html>
 <html>
  <link id="dynamic-favicon" rel="icon" href="favicon-32x32">
@@ -1032,32 +1051,10 @@ favToggle.onchange = () => {
 };
 </script>
 
-     <script type="module">
-  // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.11.0/firebase-app.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
-
-  // Your web app's Firebase configuration
-  const firebaseConfig = {
-    apiKey: "AIzaSyAiP_dqahkYDBqkurj1WDj76C8j6FqKGMY",
-    authDomain: "harshulmoon-b9295.firebaseapp.com",
-    projectId: "harshulmoon-b9295",
-    storageBucket: "harshulmoon-b9295.firebasestorage.app",
-    messagingSenderId: "641332131080",
-    appId: "1:641332131080:web:df8f4b8200da681db3a8bd"
-  };
-
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-</script>
- </div> 
-
-    <script>
+</div> <script>
         function unlockSite() {
             document.getElementById('login-screen').style.display = 'none';
         }
     </script>
-
 </body>
 </html>
