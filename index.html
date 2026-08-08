@@ -1,38 +1,32 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Brightspace</title>
-    <link id="dynamic-favicon" rel="icon" href="favicon-32x32.png">
-    <link rel="manifest" href="manifest.json">
-    <meta name="application-name" content="Document1 - Word">
-</head>
-<body style="margin: 0; padding: 0;">
-
-    <div id="login-screen" style="
-        position: fixed; 
-        top: 0; 
-        left: 0; 
-        width: 100vw; 
-        height: 100vh; 
-        background-color: #ffffff; 
-        z-index: 999999; 
-        display: flex; 
-        justify-content: center; 
-        align-items: center; 
-        overflow: hidden;">
+<div id="login-screen" style="
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100vw; 
+    height: 100vh; 
+    background-color: #ffffff; 
+    z-index: 999999; 
+    display: flex; 
+    justify-content: center; 
+    align-items: flex-start; 
+    overflow-y: auto;">
+    
+    <div style="position: relative; width: 100%; max-width: 1200px; margin: 0 auto;">
         
-        <div style="position: relative; width: 100%; max-width: 1200px; display: flex; justify-content: center;">
-            
-            <img src="login-bg.png" alt="Login Portal" style="width: 100%; height: auto; display: block;">
-            
-            <div onclick="unlockSite()" style="
-                position: absolute; 
-                top: 26%; 
-                left: 13%; 
-                width: 17%; 
-                height: 7%; 
-                cursor: pointer; 
-                background: transparent;">
+        <img src="login-bg.png" alt="Login Portal" style="width: 100%; height: auto; display: block;">
+        
+        <div onclick="unlockSite()" style="
+            position: absolute; 
+            top: 25.5%; 
+            left: 13.2%; 
+            width: 16.5%; 
+            height: 6.8%; 
+            cursor: pointer; 
+            background: transparent;">
+        </div>
+
+    </div>
+</div>
             </div>
 
         </div>
