@@ -1,34 +1,29 @@
-<div id="login-screen" style="
-    position: fixed; 
-    top: 0; 
-    left: 0; 
-    width: 100vw; 
-    height: 100vh; 
-    background-color: #ffffff; 
-    z-index: 999999; 
-    display: flex; 
-    justify-content: center; 
-    align-items: flex-start; 
-    overflow-y: auto;">
-    
-    <div style="position: relative; width: 100%; max-width: 1200px; margin: 0 auto;">
-        
-        <img src="login-bg.png" alt="Login Portal" style="width: 100%; height: auto; display: block;">
-        
-        <div onclick="unlockSite()" style="
-            position: absolute; 
-            top: 25.5%; 
-            left: 13.2%; 
-            width: 16.5%; 
-            height: 6.8%; 
-            cursor: pointer; 
-            background: transparent;">
-        </div>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Brightspace</title>
+</head>
+<body style="margin: 0; padding: 0;">
 
-    </div>
-</div>
+    <div id="login-screen" style="
+        position: fixed; 
+        top: 0; left: 0; width: 100vw; height: 100vh; 
+        background-color: #ffffff; z-index: 999999; 
+        display: flex; justify-content: center; align-items: flex-start;">
+        
+        <div style="position: relative; width: 100%; max-width: 1200px;">
+            <img src="login-bg.png" alt="Login Portal" style="width: 100%; height: auto; display: block;">
+            
+            <div onclick="unlockSite()" style="
+                position: absolute; 
+                top: 10%; 
+                left: 10%; 
+                width: 80%; 
+                height: 80%; 
+                background: rgba(255, 0, 0, 0.5); 
+                cursor: pointer; 
+                border: 5px solid red;">
             </div>
-
         </div>
     </div>
 
